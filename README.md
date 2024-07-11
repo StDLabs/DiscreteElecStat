@@ -16,3 +16,6 @@ I would like to show two structures that differ in complexity: a simple electric
 a perfect crystalline lattice with triclinic symmetry (parallelepipedal cells). The triclinic crystal system is the most
 general crystal system, characterized by three axes of unequal lengths that intersect at oblique angles, resulting in
 a unit cell shaped like a parallelepiped.
+
+<img align="left" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole.png" width="30%"/>
+<img align="right" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice.gif" width="30%"/>
