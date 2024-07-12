@@ -39,5 +39,4 @@ that can calculate both scalar and vector fields for a specific observation poin
 and **superposition principle**. The function will take our arbitrary point configuration $\vec{r}_n$, corresponding
 set of charges $q_n$ and will compute corresponding field values in every nodal points:
 
-$$\( \varphi (\vec{r})=k\sum_{n} \frac{q_n}{|\vec{r}-\vec{r}_n|} \)$$
-$$\( \vec{E} (\vec{r})=k\sum_{n} \frac{q_n(\vec{r}-\vec{r}_n)}{|\vec{r}-\vec{r}_n|^3} \)$$
+<img src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Math/01.png"/>
