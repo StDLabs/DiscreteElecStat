@@ -19,5 +19,8 @@ a **perfect crystalline lattice** with **triclinic symmetry** (parallelepipedal 
 the most general crystal system, characterized by three axes of unequal lengths that intersect at oblique angles,
 resulting in a unit cell shaped like a parallelepiped.
 
-<img align="left" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole.png" width="43%"/>
-<img align="right" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice.gif" width="47%"/>
+<p align="center">
+    <img width="46%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole.png" alt="dipole"/>
+&nbsp;
+    <img width="49%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice.gif" alt="lattice"/>
+</p>
