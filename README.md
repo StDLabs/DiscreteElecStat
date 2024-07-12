@@ -26,7 +26,7 @@ resulting in a unit cell shaped like a parallelepiped.
 </p>
 
 For every case I used a [**three-dimensional point generator**](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/PeriodStruct/periodic_structure_cartesian_points_3d.py) 
-to get an array of point coordinates, and a [**universal three-dimensional plotter**](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_dots_planes_3d.py) 
+to get an array of point coordinates, and a universal [**three-dimensional plotter**](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_dots_planes_3d.py) 
 for points. You could see precise input data in a simple [**script file**](https://github.com/StDLabs/DiscreteElecStat/blob/main/SourceStructures.py).
 
 ## Field calculations, grid settings, input parameters
@@ -39,4 +39,18 @@ that can calculate both scalar and vector fields for a specific observation poin
 and **superposition principle**. The function will take our arbitrary point configuration $\vec{r}_n$, corresponding
 set of charges $q_n$ and will compute corresponding field values in every nodal points:
 
-<img src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Math/01.png"/>
+<img align="center" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Math/01.png"/>
+
+Then, for future visualization, we need to select **grid parameters** and appropriate functions. There are two general types
+of field mappings to be presented: two- and three-dimensional. A two-dimensional mapping for a three-dimensional
+electrostatic field due to a configuration of point charges implies showing a **plane section** on a figure. It can be
+a **contour map** or a **vector field plane section**. For this case we will use [**two-dimensional generator**](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/SpatialFields/field_section.py) 
+that calculates filed values on a two-dimensional rectangular grid. With the additional feature of the mentioned
+[**three-dimensional plotter**](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_dots_planes_3d.py), 
+we can also draw all selected planes:
+
+<p align="center">
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Plane1.gif" alt="dipole"/>
+&nbsp;
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Plane2.gif" alt="lattice"/>
+</p>
