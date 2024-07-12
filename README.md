@@ -29,3 +29,6 @@ For every case I used a [**three-dimensional point generator**](https://github.c
 to get an array of point coordinates, and a [**universal three-dimensional plotter**](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_dots_planes_3d.py) 
 for points. You could see precise input data in a simple [**script file**](https://github.com/StDLabs/DiscreteElecStat/blob/main/SourceStructures.py).
 
+## Field calculations, grid settings, input parameters
+
+<img src="https://latex.codecogs.com/svg.image?\vec{E}(\vec{r})=1">
