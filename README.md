@@ -31,4 +31,8 @@ for points. You could see precise input data in a simple [**script file**](https
 
 ## Field calculations, grid settings, input parameters
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+The complexity of possible input structures requires **universal tools** that can generate corresponding scalar and
+vector fields using a variety of **spatial grids** and **sections**. 
+
+First, we need a [function](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/SpatialFields/Central/point_charges_field_calc.py)
+that can calculate both scalar and vector fields for a specific observation point $\vec{r}$ according to Coulomb’s law.
