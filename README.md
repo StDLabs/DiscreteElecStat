@@ -20,7 +20,7 @@ the most general crystal system, characterized by three axes of unequal lengths 
 resulting in a unit cell shaped like a parallelepiped.
 
 <p align="center">
-    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole1.png" alt="dipole"/>
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole2.png" alt="dipole"/>
 &nbsp;
-    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice.gif" alt="lattice"/>
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice1.gif" alt="lattice"/>
 </p>
