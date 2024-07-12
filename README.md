@@ -36,9 +36,7 @@ vector fields using a variety of **spatial grids** and **sections**.
 
 First, we need a [function](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/SpatialFields/Central/point_charges_field_calc.py)
 that can calculate both scalar and vector fields for a specific observation point $\vec{r}$ according to **Coulomb’s law**
-and **superposition principle**. The function will take our arbitrary point configuration $G=\{\vec{r}_n\}$, corresponding
-set of charges $\( Q=\{q_n\} \)$ and will compute corresponding field values in every nodal points:
+and **superposition principle**. The function will take our arbitrary point configuration $\vec{r}_n$, corresponding
+set of charges $q_n$ and will compute corresponding field values in every nodal points:
 
-$$\( \varphi (\vec{r})=k\sum_{n} \frac{q_n}{|\vec{r}-\vec{r}_n|} \)$$
-
-$$\( \vec{E} (\vec{r})=k\sum_{n} \frac{q_n(\vec{r}-\vec{r}_n)}{|\vec{r}-\vec{r}_n|^3} \)$$
+$$\ \varphi (\vec{r})=k\sum_{n} \frac{q_n}{|\vec{r}-\vec{r}_n|}, \ \ \ \vec{E} (\vec{r})=k\sum_{n} \frac{q_n(\vec{r}-\vec{r}_n)}{|\vec{r}-\vec{r}_n|^3}$$
