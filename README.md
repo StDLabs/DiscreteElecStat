@@ -25,7 +25,7 @@ resulting in a unit cell shaped like a parallelepiped.
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice1.gif" alt="lattice"/>
 </p>
 
-For every case I used a [**three-dimensional point generator**](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/PeriodStruct/periodic_structure_cartesian_points_3d.py) 
+For every case I used a [three-dimensional point generator](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/PeriodStruct/periodic_structure_cartesian_points_3d.py) 
 to get an array of point coordinates, and a universal [**three-dimensional plotter**](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_dots_planes_3d.py) 
 for points. You could see precise input data in a simple [**script file**](https://github.com/StDLabs/DiscreteElecStat/blob/main/SourceStructures.py).
 
@@ -54,7 +54,7 @@ that calculates filed values on a two-dimensional rectangular grid. With the add
 we can also draw all selected planes:
 
 <p align="center">
-    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Plane1.gif" alt="dipole"/>
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Plane11.gif" alt="dipole"/>
 &nbsp;
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Plane2.gif" alt="lattice"/>
 </p>
@@ -65,3 +65,20 @@ Computing fields will also require two- or three-dimensional **area bounds** for
 
 ## Plotting and visualizing options
 
+Finally, It is necessary to visualize all calculated fields and mentioned mathematical objects using corresponding
+plotters in two- and three-dimensions.
+
+Using [two-dimensional contour map plotter](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/PlaneMapping/plot_scalar_field_contour_map.py), 
+I drew contour maps in two different styles (blue and white) for both dipole and lattice fields:
+
+<p align="center">
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole_section_blue.png" alt="Dipole_section_blue"/>
+&nbsp;
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole_section_white.png" alt="Dipole_section_white"/>
+</p>
+
+<p align="center">
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_section_blue.png" alt="Lattice_section_blue"/>
+&nbsp;
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_section_white.png" alt="Lattice_section_white"/>
+</p>
