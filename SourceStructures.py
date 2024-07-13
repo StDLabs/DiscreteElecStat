@@ -3,6 +3,8 @@ from MathTools.PlotVisualize.SpaceMapping.plot_dots_planes_3d import plot_dots_p
 from MathTools.PointGenerators.SpatialFields.field_section import field_section
 from MathTools.PlotVisualize.PlaneMapping.plot_scalar_field_contour_map import plot_scalar_field_contour_map
 from MathTools.PlotVisualize.SpaceMapping.plot_vector_field_section import plot_vector_field_section
+from MathTools.PointGenerators.SpatialFields.field_3d import field_3d
+from MathTools.PlotVisualize.SpaceMapping.plot_scalar_filed_contour_3d import plot_scalar_filed_contour_3d
 import numpy as np
 
 # structure parameters for dipole and crystal lattice:
@@ -80,3 +82,12 @@ title_main2 = 'lattice vector field section'
 title_bar2 = ' '
 plot_vector_field_section(P1, PL1[0], F1_E, title_main1, title_bar1)
 plot_vector_field_section(P2, PL2[0], F2_E, title_main2, title_bar2)
+
+N3d1 = [30, 30, 30]
+N3d2 = [30, 30, 30]
+M1, MQ1 = field_3d(P1, N3d1, G1, Q1, A_phi, function, option_phi)
+M2, MQ2 = field_3d(P2, N3d2, G2, Q2, A_phi, function, option_phi)
+LN1 = 20
+LN2 = 20
+plot_scalar_filed_contour_3d(P1, MQ1, LN1, title_main1, title_bar1)
+plot_scalar_filed_contour_3d(P2, MQ2, LN2, title_main2, title_bar2)

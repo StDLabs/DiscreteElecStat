@@ -83,10 +83,21 @@ I drew contour maps in two different styles (blue and white) for both dipole and
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_section_white.png" alt="Lattice_section_white"/>
 </p>
 
-For vector fileds we could use another vector field plane section plotter and obtain its spatial view:
+For vector fields we could use another [vector field plane section plotter](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_vector_field_section.py) 
+and obtain their spatial view:
 
 <p align="center">
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole_section_vector.gif" alt="Dipole_section_vector"/>
 &nbsp;
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_section_vector.gif" alt="Lattice_section_vector"/>
+</p>
+
+
+For three-dimensional scalar field mapping we could use [plotter for isosurfaces](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_scalar_filed_contour_3d.py), 
+select parameters of the grid and use corresponding [three-dimensional field generator](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/SpatialFields/field_3d.py):
+
+<p align="center">
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole_isosurfaces.gif" alt="Dipole_isosurfaces"/>
+&nbsp;
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_isosurfaces.gif" alt="Lattice_isosurfaces"/>
 </p>
