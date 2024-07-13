@@ -47,8 +47,8 @@ Then, for future visualization, we need to select **grid parameters** and approp
 of field mappings to be presented: two- and three-dimensional. 
 
 A two-dimensional mapping for a three-dimensional electrostatic field due to a configuration of point charges implies
-showing a **plane section** on a figure. It can be a **contour map** or a **vector field plane section**. For this case
-we will use [**two-dimensional generator**](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/SpatialFields/field_section.py) 
+showing a **plane section** on a figure. It can be a **scalar function**, **contour map** or **vector field plane section**. 
+For this case we will use [**two-dimensional generator**](https://github.com/StDLabs/MathTools/blob/main/PointGenerators/SpatialFields/field_section.py) 
 that calculates filed values on a two-dimensional rectangular grid. With the additional feature of the mentioned
 [**three-dimensional plotter**](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_dots_planes_3d.py), 
 we can also draw all selected planes:
@@ -58,3 +58,10 @@ we can also draw all selected planes:
 &nbsp;
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Plane2.gif" alt="lattice"/>
 </p>
+
+Three-dimensional mappings include **isosurfaces**, **field lines** in space or a simple **vector view**. 
+Computing fields will also require two- or three-dimensional **area bounds** for calculations and corresponding
+**grid resolutions**.
+
+## Plotting and visualizing options
+
