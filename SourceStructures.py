@@ -84,17 +84,21 @@ title_bar2 = ' '
 plot_vector_field_section(P1, PL1[0], F1_E, title_main1, title_bar1)
 plot_vector_field_section(P2, PL2[0], F2_E, title_main2, title_bar2)
 
+# field generators on 3D grids
 N3d1 = [30, 30, 30]
 N3d2 = [30, 30, 30]
 M11, MQ11 = field_3d(P1, N3d1, G1, Q1, A_phi, function, option_phi)
 M21, MQ21 = field_3d(P2, N3d2, G2, Q2, A_phi, function, option_phi)
 M12, MQ12 = field_3d(P1, N3d1, G1, Q1, A_E, function, option_E)
 M22, MQ22 = field_3d(P2, N3d2, G2, Q2, A_E, function, option_E)
+
+# plot isosurfaces
 LN1 = 20
 LN2 = 20
 plot_scalar_filed_contour_3d(P1, MQ11, LN1, title_main1, title_bar1)
 plot_scalar_filed_contour_3d(P2, MQ21, LN2, title_main2, title_bar2)
 
+# plot field lines
 seed_resolution = 15
 seed_visible = True
 MQ12 = np.transpose(np.array(MQ12), (3, 0, 1, 2)).tolist()
