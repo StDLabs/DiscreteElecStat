@@ -82,3 +82,11 @@ I drew contour maps in two different styles (blue and white) for both dipole and
 &nbsp;
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_section_white.png" alt="Lattice_section_white"/>
 </p>
+
+For vector fileds we could use another vector field plane section plotter and obtain its spatial view:
+
+<p align="center">
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Dipole_section_vector.gif" alt="Dipole_section_vector"/>
+&nbsp;
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_section_vector.gif" alt="Lattice_section_vector"/>
+</p>
