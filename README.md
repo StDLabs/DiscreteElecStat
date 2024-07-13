@@ -101,3 +101,11 @@ select parameters of the grid and use corresponding [three-dimensional field gen
 &nbsp;
     <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Lattice_isosurfaces.gif" alt="Lattice_isosurfaces"/>
 </p>
+
+Another way to visualize fields are [three-dimensional field lines](https://github.com/StDLabs/MathTools/blob/main/PlotVisualize/SpaceMapping/plot_field_lines_3D.py):
+
+<p align="center">
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Field_lines_dipole.gif" alt="Field_lines_dipole"/>
+&nbsp;
+    <img width="45%" src="https://github.com/StDLabs/DiscreteElecStat/blob/main/Content/Field_lines_lattice.gif" alt="Field_lines_lattice"/>
+</p>

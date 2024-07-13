@@ -5,6 +5,7 @@ from MathTools.PlotVisualize.PlaneMapping.plot_scalar_field_contour_map import p
 from MathTools.PlotVisualize.SpaceMapping.plot_vector_field_section import plot_vector_field_section
 from MathTools.PointGenerators.SpatialFields.field_3d import field_3d
 from MathTools.PlotVisualize.SpaceMapping.plot_scalar_filed_contour_3d import plot_scalar_filed_contour_3d
+from MathTools.PlotVisualize.SpaceMapping.plot_field_lines_3D import plot_field_lines_3D
 import numpy as np
 
 # structure parameters for dipole and crystal lattice:
@@ -85,9 +86,18 @@ plot_vector_field_section(P2, PL2[0], F2_E, title_main2, title_bar2)
 
 N3d1 = [30, 30, 30]
 N3d2 = [30, 30, 30]
-M1, MQ1 = field_3d(P1, N3d1, G1, Q1, A_phi, function, option_phi)
-M2, MQ2 = field_3d(P2, N3d2, G2, Q2, A_phi, function, option_phi)
+M11, MQ11 = field_3d(P1, N3d1, G1, Q1, A_phi, function, option_phi)
+M21, MQ21 = field_3d(P2, N3d2, G2, Q2, A_phi, function, option_phi)
+M12, MQ12 = field_3d(P1, N3d1, G1, Q1, A_E, function, option_E)
+M22, MQ22 = field_3d(P2, N3d2, G2, Q2, A_E, function, option_E)
 LN1 = 20
 LN2 = 20
-plot_scalar_filed_contour_3d(P1, MQ1, LN1, title_main1, title_bar1)
-plot_scalar_filed_contour_3d(P2, MQ2, LN2, title_main2, title_bar2)
+plot_scalar_filed_contour_3d(P1, MQ11, LN1, title_main1, title_bar1)
+plot_scalar_filed_contour_3d(P2, MQ21, LN2, title_main2, title_bar2)
+
+seed_resolution = 15
+seed_visible = True
+MQ12 = np.transpose(np.array(MQ12), (3, 0, 1, 2)).tolist()
+MQ22 = np.transpose(np.array(MQ22), (3, 0, 1, 2)).tolist()
+plot_field_lines_3D(P1, MQ12, seed_resolution, seed_visible, title_main1, title_bar1)
+plot_field_lines_3D(P2, MQ22, seed_resolution, seed_visible, title_main1, title_bar1)
